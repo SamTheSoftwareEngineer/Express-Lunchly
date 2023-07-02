@@ -1,17 +1,18 @@
 {
-  "name": "solution",
+  "name": "biztime",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Joel Burton",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3",
-    "morgan": "^1.9.0",
-    "supertest": "^3.4.2"
+    "express": "^4.16.4",
+    "pg": "^8.3.3",
+    "slugify": "^1.3.1",
+    "supertest": "^3.3.0"
   }
 }
