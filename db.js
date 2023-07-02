@@ -1,13 +1,9 @@
-/** Database setup for BizTime. */
+/** Database for lunchly */
 
+const pg = require("pg");
 
-const { Client } = require("pg");
+const db = new pg.Client("postgresql:///lunchly");
 
-const client = new Client({
-  connectionString: "postgresql:///biztime"
-});
+db.connect();
 
-client.connect();
-
-
-module.exports = client;
+module.exports = db;
